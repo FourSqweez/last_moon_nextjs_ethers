@@ -1,8 +1,12 @@
 import React from 'react'
-import { notFound } from 'next/navigation'
+import Home from './Home'
 
 const Page = () => {
-  return <div>This is main page</div>
+  return (
+    <div>
+      <Home />
+    </div>
+  )
 }
 
 export default Page
