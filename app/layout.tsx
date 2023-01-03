@@ -1,5 +1,4 @@
 'use client'
-
 import { MantineProvider } from '@mantine/core'
 
 export default function RootLayout({
@@ -9,8 +8,8 @@ export default function RootLayout({
 }) {
   return (
     <html>
+      <head />
       <MantineProvider withGlobalStyles withNormalizeCSS>
-        <head />
         <body>{children}</body>
       </MantineProvider>
     </html>

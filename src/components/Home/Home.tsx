@@ -1,17 +1,21 @@
 'use client'
 import React from 'react'
-import { Card, Center, Container, Image, Text } from '@mantine/core'
+import { Card, Container, Image, Text } from '@mantine/core'
+import { useRouter } from 'next/navigation'
 
 const Home = () => {
+  const router = useRouter()
+
   return (
-    <Container size="xl" py="xl">
+    <Container p="xl">
       <Card
         withBorder
         shadow="sm"
         p="xs"
         component="a"
+        onClick={() => router.push('/moon')}
         py="xs"
-        style={{ width: '300px', height: '400px' }}>
+        style={{ width: '300px', height: '400px', cursor: 'pointer' }}>
         <Card.Section>
           <Image
             src="https://images.unsplash.com/photo-1579227114347-15d08fc37cae?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80"
